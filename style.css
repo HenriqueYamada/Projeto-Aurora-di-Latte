@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+/*---Menu---*/
+
+header{
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0d6ad;
+    padding: 20px 15px 15px 15px;
+    height: 100px;
+}
+
+header > #logo{
+    flex: 0 0 200px;
+}
+
+header > #menu-hamburguer{
+    display: none;
+}
+
+header .menu{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu a{
+    position: relative;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 0px 15px;
+    transition: color 0.5s ease;
+}
+
+.menu a::after{
+    position: absolute;
+    content: ' ';
+    background-color: #b75420;
+    text-decoration: underline;
+    bottom: -5px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+#logo > img{
+    position: absolute;
+    width: 150px;
+
+    transform: translateY(-55%);
+}
+
+#logo > img:hover{
+    width: 160px;
+    transition: .3s;
+}
+
+/*---Our Story---*/
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#our-story{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+#our-story > .text{
+    flex: 1 1 550px;
+    align-self: center;
+    margin: 10px 0px;
+}
+
+#our-story > .text > h2{
+    font-size: 1.75em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#our-story > .text > p{
+    text-align: justify;
+}
+
+#our-story > .media{
+    flex: 0 1 500px;
+    margin: 0px 0px 25px 0px;
+}
+
+/*The guys' favorite flavors*/
+
+#favorite-flavors{
+    text-align: center;
+    background-color: #b75420;
+    color: white;
+    padding: 15px;
+}
+
+.favorite-flavors__flavors{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#favorite-flavors h2{
+    display: block;
+    margin: 15px 0px;
+}
+
+.tasty-ice-creams{
+    flex: 0 0 270px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0px;
+}
+
+.tasty-ice-creams h3, .tasty-ice-creams img{
+    margin-bottom: 10px;
+}
+
+/*---Contact Us---*/
+
+#contact-us{
+    background-color: gray;
+}
+
+#contact-us ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px 0px;
+    width: 100%;
+    list-style-type: none;
+}
+
+#contact-us li{
+    flex: 0 1 265px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#contact-us a{
+    position: relative;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1em;
+
+    color: white;
+    text-decoration: none;
+}
+
+#contact-us a::after{
+    position: absolute;
+    content: ' ';
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    top: 20px;
+    transition: all 0.75s;
+    transform: translateX(-50%);
+}
+
+#contact-us a:hover::after{
+    text-decoration: underline;
+    width: 100%;
+}
+
+.contact-us__horario{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1em;
+}
+
+/*---Footer---*/
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+footer p{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+footer p > a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(82, 130, 194);
+}
+
+footer p > a::after{
+    position: absolute;
+    content: ' ';
+    background-color: rgb(82, 130, 194);
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    transition: all 0.75s;
+}
+
+footer p > a:hover::after{
+    width: 100%;
+}

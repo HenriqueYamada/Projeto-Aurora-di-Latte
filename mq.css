@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*@media screen and (max-width: 884px) and (min-width: 400px) {
+    #our-story > .media{
+        padding-right: 35px;
+    }
+}*/
+
+@media screen and (max-width: 600px) {
+    header > #menu-hamburguer{
+        display: inline-block;
+        font-size: 1.8em;
+        padding-right: 30px;
+        cursor: pointer;
+    }
+    
+    nav{
+        display: none;
+        position: absolute;
+
+        background-color: #f0d6ad;
+        right: 0%;
+        width: 125px;
+        top: 70px;
+    }
+
+    .menu{
+        flex-flow: column nowrap;
+        margin-top: 5px;
+    }
+}

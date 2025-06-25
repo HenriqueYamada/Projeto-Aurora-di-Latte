@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Flexível</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mq.css">
+    <link rel="shortcut icon" href="imagens/Icon - Aurora di Latte.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/logo - Aurora di Latte 2.png" alt="Logo da franquia: Aurora di Latte">
+        </div>
+
+        <i class="material-icons" id="menu-hamburguer" onclick="clickMenu()">menu</i>
+        <nav id="itens">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#our-story">Story</a></li>
+                <li><a href="#favorite-flavors">Flavors</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="our-story">
+            <div class="text">
+                <h2>Our Story</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corporis praesentium nesciunt natus deleniti ut expedita ducimus eligendi quos atque, voluptates aut reprehenderit eaque veniam incidunt. Delectus ullam deleniti distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam labore, saepe nam repellat vel quos! Commodi ducimus eum ad fugiat aperiam, pariatur natus exercitationem ipsam optio, officia sed error cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident enim vel vitae saepe. Optio, tempora repellendus nihil nemo porro quidem recusandae mollitia quod ex ea dolorum distinctio aliquam expedita! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quos expedita consequuntur doloribus eum voluptatibus reprehenderit voluptates esse quia temporibus explicabo vero repudiandae eveniet fugiat, eos distinctio neque. Nobis, praesentium.</p>
+            </div>
+            
+            <div class="media">
+                <img src="imagens/Image - Place 2.jpeg" alt="imagem do local">
+            </div>
+        </section>
+
+        <!--Fim da Seção: Nossa História-->
+
+        <section id="favorite-flavors">
+            <h2>The Favorite Flavors from the Guys!</h2>
+            <div class="favorite-flavors__flavors">
+                <div class="tasty-ice-creams" id="ninho-com-nutella">
+                    <h3>Nest with Nutella</h3>
+                    <img class="media-flavors" src="imagens/sabores/sorvete-ninho-com-nutella 2 - 250px.png" alt="Sorvete de ninho com nutella">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere, at veritatis quo qui quaerat nam!</p>
+                </div>
+
+                <div class="tasty-ice-creams" id="pistache">
+                    <h3>Pistachio</h3>
+                    <img class="media-flavors" src="imagens/sabores/sorvete-de-pistache 2 - 250px.png" alt="Sorvete de pistache">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere, at veritatis quo qui quaerat nam!</p>
+                </div>
+
+                <div class="tasty-ice-creams" id="doce-de-leite-com-nozes">
+                    <h3>Dulce de Leche with Nuts</h3>
+                    <img class="media-flavors" src="imagens/sabores/sorvete-doce-de-leite-com-nozes 2 - 250px.png" alt="Sorvete de doce de leite com nozes">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere, at veritatis quo qui quaerat nam!</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Fim da Seção: Sabores Favoritos-->
+
+        <section id="contact-us">
+            <ul>
+                <li><a href="#">+55 (11) 0000-0000</a></li>
+                <li><a href="#">sorveteriadeliciosa@gmail.com</a></li>
+                <li><a href="#">Rua dos Sorvetes, N° 316</a></li>
+                <li class="contact-us__horario">09:00 - 21:00</li>
+            </ul>
+        </section>
+
+        <!--Fim da Seção: Nos contate-->
+    </main>
+
+    <footer>
+        <p>© 2025 Criado por <a href="https://github.com/HenriqueYamada" target="_blank">Henrique Yuji Yamada</a></p>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
