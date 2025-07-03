@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
@@ -21,7 +25,7 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0d6ad;
+    background-color: #f3b583;
     padding: 20px 15px 15px 15px;
     height: 100px;
 }
@@ -83,6 +87,7 @@ header .menu{
 main{
     display: flex;
     flex-flow: column nowrap;
+    background-color: #f0d6ad;
 }
 
 #our-story{
@@ -119,7 +124,7 @@ main{
 #favorite-flavors{
     text-align: center;
     background-color: #b75420;
-    color: white;
+    color: #ffd277;
     padding: 15px;
 }
 
